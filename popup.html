@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SpaceX Next Launch</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="popup.js"></script>
+  </head>
+
+  <body style="width: 35em;">
+    <div id="page_1">
+      <div class="card">
+        <div class="card-body" id="card_width">
+          <h5 class="card-title"><div id="spacex-name"></div></h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            <div id="spacex-date"></div>
+          </h6>
+          <p class="card-text">
+            <div class="row">
+              <div class="col">
+                <div id="spacex-details" style="padding-bottom: 2rem;"></div>
+              </div>
+              <div class="col-2">
+                <img id="spacex-patch" src="" alt="spacex patch icon" class="img-thumbnail"></img>
+              </div>
+            </div>
+          </p>
+
+          <a id="rocket_button" class="badge badge-primary text-white">
+            About Rocket
+          </a>
+          <a id="payload_button" class="badge badge-success text-white">
+            About Payloads
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="page_2">
+      <div class="card">
+        <a id="back_button1" class="badge badge-secondary text-white">Back</a>
+        <div class="card-body">
+          <h5 class="card-title">About Rocket</h5>
+          <p class="card-text"></p>
+          <ul class="list-group" id="rockets"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="page_3">
+      <div class="card">
+        <a id="back_button2" class="badge badge-secondary text-white">Back</a>
+        <div class="card-body">
+          <h5 class="card-title">About Payload(s)</h5>
+          <p class="card-text"></p>
+          <ul class="list-group" id="payloads"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

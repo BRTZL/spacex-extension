@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "SpaceX Next Launch",
+  "description": "Do you want to know when is the next spacex launch",
+  "version": "1.0",
+  "icons": { "512": "spacex.png" },
+  "browser_action": {
+    "default_icon": "spacex.png",
+    "default_popup": "popup.html"
+  }
+}
