@@ -27,9 +27,13 @@ const getData = async () => {
     .getElementById("spacex-name")
     .appendChild(document.createTextNode(data.name));
 
-  document.getElementById("spacex-date")..appendChild(document.createTextNode(dateString));
+  document
+    .getElementById("spacex-date")
+    .appendChild(document.createTextNode(dateString));
 
-  document.getElementById("spacex-details").innerHTML = data.details;
+  document
+    .getElementById("spacex-details")
+    .appendChild(document.createTextNode(data.details));
 
   document.getElementById("spacex-patch").src = data.links.patch.small;
 
