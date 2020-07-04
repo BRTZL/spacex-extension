@@ -12,12 +12,18 @@
     <script src="popup.js"></script>
   </head>
 
-  <body style="width: 35em;">
+  <body  style="width: 35em;">
+    <div id="loading" class="text-center" style="padding: 36px;">
+        <div class="spinner-border text-success" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
     <div id="page_1">
       <div class="card">
         <div class="card-body" id="card_width">
           <h5 class="card-title"><div id="spacex-name"></div></h5>
-          <h6 class="card-subtitle mb-2 text-muted">
+          <h6 class="card-subtitle mb-2 text-muted">  
             <div id="spacex-date"></div>
           </h6>
           <p class="card-text">
@@ -26,7 +32,7 @@
                 <div id="spacex-details" style="padding-bottom: 2rem;"></div>
               </div>
               <div class="col-2">
-                <img id="spacex-patch" src="" alt="spacex patch icon" class="img-thumbnail"></img>
+                <img id="spacex-patch" src="" alt="spacex patch icon" class="img-thumbnail"/>
               </div>
             </div>
           </p>

@@ -2,10 +2,15 @@
   "manifest_version": 2,
   "name": "SpaceX Next Launch",
   "description": "Do you want to know when is the next spacex launch",
-  "version": "1.0",
+  "version": "0.1",
+  "author": "Bartu OZEL",
   "icons": { "512": "spacex.png" },
   "browser_action": {
     "default_icon": "spacex.png",
     "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   }
 }

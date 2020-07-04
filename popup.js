@@ -1,4 +1,5 @@
 var state = 0;
+var loading = true;
 
 const getData = async () => {
   // making api request
@@ -133,9 +134,21 @@ const getData = async () => {
     toAdd.appendChild(newDiv);
     document.getElementById("payloads").appendChild(toAdd);
   });
+  loading = false;
+  change_page();
 };
 
 function change_page() {
+  if (loading) {
+    document.getElementById("loading").style.display = "block";
+    document.getElementById("page_1").style.display = "none";
+    document.getElementById("page_2").style.display = "none";
+    document.getElementById("page_3").style.display = "none";
+    return;
+  } else {
+    document.getElementById("loading").style.display = "none";
+  }
+
   switch (state) {
     case 0:
       document.getElementById("page_1").style.display = "block";
